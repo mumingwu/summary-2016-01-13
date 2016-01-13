@@ -1,0 +1,21 @@
+1.如何使用远程连接从windows或者linux连到服务器进行操作
+切换用户
+muwei@muwei-Lenovo-Product:~$ ssh muwei@125.223.8.130
+传递文件
+muwei@muwei-Lenovo-Product:~$ scp /home/muwei/Documents/test.doc muwei@125.223.8.130:/home/muwei/Documents
+统计当前文件夹(目录)大小，并按文件大小排序
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ du -sh * | sort -n
+查看指定文件大小
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ du -sk /home/muwei/Documents/test.doc
+查看指定文件夹大小
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ du -sk /home/muwei/Documents/
+查看CPU信息
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ cat /proc/cpuinfo
+查看内存信息
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ free -m
+产看硬盘信息
+muwei@muwei-Lenovo-Product:~/Documents/eclipse$ sudo fdisk -l
+muwei@muwei-Lenovo-Product:~/workspace/ltp-3.3.0$ ./bin/ltp_test --input 2.txt --postagger-model ./ltp_data/pos.model >3.txt
+分词
+
+
